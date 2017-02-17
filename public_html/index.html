@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulari01</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer src="formi.js"></script>
+        <link rel="stylesheet" type="text/css" href="formi.css"  />
+    </head>
+    <body>
+        <div>Formulari</div>
+        <div><input type="button" id="oculta" value="Oculta" hidden="hidden" onclick="oculta();" /></div>
+        <div>
+            <label for="files">Files: </label><input type="text" id="files" />
+            <label for="columnes">Columnes: </label><input type="text" id="columnes" />
+            <input type="button" id="enviar" value="Enviar" onclick="tabla();" />
+            <div id="tabla"></div>
+        </div>
+        <div>
+            <p id="texte" hidden="hidden" ondblclick="desapareix()" >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div>
+            <p id="texte2" onclick="alertar()" >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div>
+            <p id="texte3" onmouseover="hover(true)" onmouseout="hover(false)">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div>
+        <textarea id="quad1" onfocus="foc(1);" onblur="surt(1);"> Un quadre de text</textarea>
+        <textarea id="quad2" onfocus="foc(2);" onblur="surt(2);">Un altre quadre de text</textarea>
+        </div>
+        <div id="etiq1">
+            <input type="button" onclick="desap(etiq1);" value="desapareix" />
+            <h3>HOOOHOHOHO</h3>
+        </div>
+        <div id="etiq2">
+            <input type="button" onclick="desap(etiq2);" value="desapareix" />
+            <h3>Feliz Navidad</h3>
+        </div>
+    </body>
+</html>

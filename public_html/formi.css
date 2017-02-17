@@ -1,0 +1,28 @@
+div table {
+    border: 1px solid black;
+    border-collapse: collapse;  
+}
+div table tr:nth-child(even) {
+    background-color: red;
+}
+div table tr:nth-child(odd) {
+    background-color: green;
+}
+div p#texte2 {
+    color: blue;
+}
+div p#texte3 {
+    color: green;
+}
+div quad1 {
+    background-color: white;
+}
+div quad2 {
+    background-color: white;
+}
+div#etiq1 {
+    background-color: cyan;
+}
+div#etiq2 {
+    background-color: blue;
+}
