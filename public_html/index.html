@@ -5,17 +5,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script defer src="formi.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="formi.css"  />
     </head>
     <body>
         <div>Formulari</div>
-        <div><input type="button" id="oculta" value="Oculta" hidden="hidden" onclick="oculta();" /></div>
+        <div><input type="button" id="oculta" value="Oculta" hidden="hidden" /></div>
+        <hr />
         <div>
             <label for="files">Files: </label><input type="text" id="files" />
             <label for="columnes">Columnes: </label><input type="text" id="columnes" />
-            <input type="button" id="enviar" value="Enviar" onclick="tabla();" />
+            <input type="button" id="enviar" value="Enviar" />
             <div id="tabla"></div>
         </div>
+        <hr />
         <div>
             <p id="texte" hidden="hidden" ondblclick="desapareix()" >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -31,10 +34,12 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
+        <hr />
         <div>
-        <textarea id="quad1" onfocus="foc(1);" onblur="surt(1);"> Un quadre de text</textarea>
+        <textarea id="quad1" onfocus="foc(1);" onblur="surt(1);">Un quadre de text</textarea>
         <textarea id="quad2" onfocus="foc(2);" onblur="surt(2);">Un altre quadre de text</textarea>
         </div>
+        <hr />
         <div id="etiq1">
             <input type="button" onclick="desap(etiq1);" value="desapareix" />
             <h3>HOOOHOHOHO</h3>
@@ -43,5 +48,44 @@
             <input type="button" onclick="desap(etiq2);" value="desapareix" />
             <h3>Feliz Navidad</h3>
         </div>
+        <hr />
+        <div id="fade1">
+            <input type="button" id="desap1" value="desapareix" />
+            <h3>AHAHAHAHAHAH</h3>
+        </div>
+        <div id="fade2">
+            <input type="button" id="desap2" value="desapareix" />
+            <h3>JUAJAUJUAJAU</h3>
+        </div>
+        <div id="fade3">
+            <input type="button" id="desap3" value="desapareix" />
+            <h3>JUOJUOOUO</h3>
+        </div>
+        <hr />
+        <input type="button" id="fad1" value="Fer fadeIN()" />
+        <div id="q1"></div><br />
+        <div id="q2"></div><br />
+        <div id="q3"></div><br />
+        <div id="q4"></div><br />
+        <div id="q5"></div><br />
+        <hr />
+        <div id="tabla02">
+        <table id="tab" border>
+            <tr>
+                <td></td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td></td>
+            </tr>
+        </table>
+        <button>Canvia</button></div>
+        <hr />
+        <form action="#">
+            <label for="pass">Introdueix la contrasenya: </label>
+            <input type="password" id="pass" /><span id="fort"></span>
+        </form>
+        <br />
     </body>
 </html>

@@ -26,3 +26,63 @@ div#etiq1 {
 div#etiq2 {
     background-color: blue;
 }
+div fade1 {
+    background-color: brown;
+}
+div fade2 {
+    background-color: blueviolet;
+}
+div fade3 {
+    background-color: yellow;
+}
+div#q1, div#q2, div#q3, div#q4, div#q5, div#q1a, div#q2a, div#q3a, div#q4a{
+    width: 80px;
+    height: 80px;  
+}
+div#q1, div#q1a{
+    background-color: red;
+}
+div#q2, div#q2a {
+    background-color: yellow;
+}
+div#q3, div#q3a {
+    background-color: blue;
+}
+div#q4, div#q4a {
+    background-color: violet;
+}
+div#q5 {
+    background-color: orange;
+}
+#q1a,#q2a,#q3a,#q4a{
+    position: absolute;
+}
+input {
+    border: none;
+    border-radius: 2em;
+    background-color: #993300;
+    color: white;
+    cursor: pointer;
+}
+input:focus {/*No es veu caixa selecció en Chrome */
+    outline: 0px;
+}
+input#mov1 {
+    margin: 0 auto;
+    display: block;
+}
+div#tabla table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 300px;
+    height: 300px;
+}
+/*div#tabla table td:nth-child(even) {
+    background-color: red;
+}
+div#tabla table td:nth-child(odd) {
+    background-color: green;
+}*/
+.foo {
+    background-color: yellow;
+}

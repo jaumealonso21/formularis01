@@ -1,21 +1,51 @@
-var ocultar, columnes, files, tabla01, texte, texte02, quad1, quad2, etiq1, etiq2;
+var ocultar, columnes, files, tabla01, texte, texte02, quad1, quad2, etiq1, etiq2, enviar;
+var pass, fort;
 
 window.onload = ini();
 
 function ini(){
     ocultar = document.getElementById('oculta');
     ocultar.hidden = false;
+    ocultar.addEventListener("click", oculta);
     files = document.getElementById('files');
     columnes = document.getElementById('columnes');
     tabla01 = document.getElementById('tabla');
+    enviar = document.getElementById('enviar');
+    enviar.addEventListener("click", tabla);
     texte = document.getElementById('texte');
     texte.hidden = false;
     texte02 = document.getElementById('texte2');
-    //document.addEventListener("mouseDown", alertar(), false);
     quad1 = document.getElementById('quad1');
     quad2 = document.getElementById('quad2');
     etiq1 = document.getElementById('etiq1');
     etiq2 = document.getElementById('etiq2');
+    $('#desap1').click(function(){
+        $('#fade1').fadeOut().fadeIn();
+    });
+    $('#desap2').click(function(){
+        $('#fade2').fadeOut('slow').fadeIn();
+    });
+    $('#desap3').click(function(){
+        $('#fade3').fadeOut(3000).fadeIn();
+    });
+    $("#fad1").click(function(){
+        $("#q1").fadeOut().fadeIn("slow");
+        $("#q2").fadeOut().fadeIn("fast");
+        $("#q3").fadeOut().fadeIn(800);
+        $("#q4").fadeOut().fadeIn(2000);
+        $("#q5").fadeOut().fadeIn(4000);
+    });
+    $( "button" ).click(function() {
+      $( "td" ).each(function( index, element ) {
+        // element == this
+        if ( $( this ).html() === "" ) {
+            $( element ).css( "backgroundColor", "yellow" );
+        }
+      });
+    });
+    pass = document.getElementById("pass");
+    fort = document.getElementById("fort");
+    pass.addEventListener("input", revisa);
 }
 function oculta() {
     ocultar.hidden = true;
@@ -83,4 +113,13 @@ function surt(int){
 }
 function desap(etiq){
     etiq.style.display= "none";
+}
+function revisa() {
+    if(pass.value.length<5){
+        fort.innerHTML = "no segura";
+    }else if(pass.value.length<8){
+        fort.innerHTML = "mitjanament segura";
+    }else if(pass.value.length>8){
+        fort.innerHTML = "segura";
+    }
 }
